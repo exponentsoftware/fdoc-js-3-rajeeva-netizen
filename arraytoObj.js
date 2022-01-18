@@ -1,13 +1,16 @@
 const students = [
 				['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
-				['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+				['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]],
+        ['Rajeeva', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]],
 			]
-
-// console.log(students)
-let arr=[]
-students.map(i =>{
-  arr.push(Object.assign({}, i))
-  //console.log(Object.assign({}, i))
-
+const arrayToObj=stud=>{
+  console.log(stud)
+  stud.map(student=>{
+  [name, skills, scores]=student
+  console.log({name, skills,scores})
+ // return student.indexOf()
 })
-console.log(arr)
+}
+
+
+arrayToObj(students)
